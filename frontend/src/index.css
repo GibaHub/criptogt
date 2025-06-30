@@ -1,0 +1,71 @@
+
+:root {
+  --bg-light: #f4f6f9;
+  --bg-dark: #1e1e1e;
+  --text-light: #222;
+  --text-dark: #ffffff;
+  --card-light: #ffffff;
+  --card-dark: #2c2c2c;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+  }
+
+  table {
+    background-color: var(--card-dark);
+    color: var(--text-dark);
+  }
+
+  th {
+    background-color: #333;
+    color: var(--text-dark);
+  }
+
+  td {
+    color: var(--text-dark);
+  }
+
+  input, select, textarea {
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #777;
+  }
+
+  button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+  }
+}
+
+input, select, textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 6px 0;
+}
+
+button {
+  padding: 10px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}

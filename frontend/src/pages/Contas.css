@@ -1,0 +1,145 @@
+.contas-container {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contas-form-box {
+  background-color: #1e1e1e;
+  padding: 24px 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.contas-form-box h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: #e0e0e0;
+}
+
+.contas-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px 24px;
+}
+
+.contas-form input,
+.contas-form select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  background-color: #2c2c2c;
+  color: #fff;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+.botoes-acao-contas {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.botoes-acao-contas .btn {
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn.salvar {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn.testar {
+  background-color: #ffc107;
+  color: black;
+}
+
+.btn.cancelar {
+    background-color: #6c757d;
+    color: white;
+}
+
+
+.grid-contas {
+  background-color: #1e1e1e;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  overflow-x: auto;
+}
+
+.grid-contas h3 {
+  margin-top: 0;
+  color: #e0e0e0;
+}
+
+.grid-contas table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.grid-contas th, .grid-contas td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #333;
+  white-space: nowrap;
+  color: #e0e0e0;
+}
+
+.grid-contas th {
+  background-color: #2c2c2c;
+  font-weight: bold;
+}
+
+.status-cell {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.status-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.status-online {
+  background-color: #28a745; /* Verde */
+}
+
+.status-offline {
+  background-color: #dc3545; /* Vermelho */
+}
+
+.botoes-acao-tabela button {
+  margin-right: 8px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-editar {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-excluir {
+  background-color: #dc3545;
+  color: white;
+}
